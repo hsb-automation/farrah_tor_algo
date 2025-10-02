@@ -4,7 +4,7 @@ import numpy as np
 import plotly.graph_objects as go
 
 st.set_page_config(page_title="Win Ratio, ML & Descriptive", layout="wide")
-EXCEL_PATH = "data2.xlsx"
+EXCEL_PATH = "data.xlsx"
 
 TIMEFRAME_ORDER = ["5m","30m","1h","6h","12h","24h"]
 COLOR_MAP = {3.0:"pink", 2.5:"blue", 2.0:"green", 1.5:"yellow", 1.0:"orange", 0.5:"red"}
@@ -182,3 +182,4 @@ fmt = {
 }
 
 st.dataframe(view.style.format(fmt), use_container_width=True)
+
